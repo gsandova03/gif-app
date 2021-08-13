@@ -1,5 +1,5 @@
 import React from 'react'
-// import PropTypes from 'prop-types'
+import PropTypes from 'prop-types';
 
 import { useFetchGifs } from '../hooks/useFetchGifs';
 import { GifGridItem } from './GifGridItem';
@@ -26,6 +26,6 @@ export const SearchCategory = ({ category }) => {
   )
 }
 
-// SearchCategory.propTypes = {
-
-// }
+SearchCategory.propTypes = {
+  category: PropTypes.string.isRequired
+}

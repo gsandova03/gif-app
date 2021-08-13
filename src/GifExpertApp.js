@@ -2,9 +2,10 @@ import React, { useState } from 'react'
 import { AddCategory } from './componentes/AddCategory';
 import { SearchCategory } from './componentes/SearchCategory';
 
-const GifExpertApp = () => {
+const GifExpertApp = ({ defaultCategories = [] }) => {
 
-  const [categories, setCategories] = useState(['One Punch']);
+  // const [categories, setCategories] = useState(['One Punch']);
+  const [categories, setCategories] = useState( defaultCategories );
 
   return (
     <>
